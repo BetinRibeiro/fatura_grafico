@@ -54,5 +54,5 @@ Se você tiver alguma dúvida ou sugestão sobre o projeto, entre em contato com
 
 ## GitHub Pages
 
-Você pode acessar o projeto online no GitHub Pages: [Entra aqui e faz o teste!!](betinribeiro.github.io/fatura_grafico)
+Você pode acessar o projeto online no GitHub Pages: [Entra aqui e faz o teste!!](https://betinribeiro.github.io/fatura_grafico/)
 
