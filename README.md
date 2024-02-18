@@ -44,6 +44,10 @@ A minha pretensão é criar o máximo possível de indicadores financeiros e de 
 
 7. (Opcional) Modifique o código-fonte para personalizar a funcionalidade do sistema.
 
+## Imagem Exemplo (Retirado do Excel)
+
+![Exemplo de imagem](https://github.com/BetinRibeiro/fatura_grafico/blob/main/imagem_exemplo.png)
+
 ## Contato
 
 Se você tiver alguma dúvida ou sugestão sobre o projeto, entre em contato comigo pelo WhatsApp: [88981126816](https://api.whatsapp.com/send?phone=5588981126816)
