@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Converter Matriz para Tabela HTML</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/materia/bootstrap.css"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="py-5">
+      <div class="container">
+        <div id="fomulario_tabela">
+          <!-- Textarea para inserir a matriz -->
+          <textarea
+            id="inputTextArea"
+            placeholder="Insira a matriz aqui"
+          ></textarea>
+          <!-- Botão para converter a matriz -->
+          <button onclick="converterMatriz()">Converter</button>
+          <!-- Botão para criar o gráfico -->
+          <button onclick="criarGrafico()">Gráfico</button>
+          <!-- Div para exibir a tabela HTML -->
+          <div class="row">
+            <div class="col-md-12">
+              <div id="outputDiv"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Canvas para exibir o gráfico -->
+        <div class="row" id="div_grafico" style="display: none">
+          <div class="col-md-8">
+            <div class=" border rounded p-4 m-1">
+              <canvas id="grafico"></canvas>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <canvas id="grafico_saidas"></canvas>
+          </div>
+        </div>
+        <div id="dados"></div>
+      </div>
+    </div>
+  </body>
+</html>
