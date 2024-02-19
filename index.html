@@ -10,14 +10,23 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div class="py-5">
+    <div class="py-1" id="fomulario_tabela">
       <div class="container">
-        <div id="fomulario_tabela">
+        <div >
           <!-- Textarea para inserir a matriz -->
-          <textarea
+
+         
+
+          <div class="bg-light border rounded p-4 m-1">
+            <h5 class="d-flex justify-content-between mb-3">
+              <span class="text-muted">Formulario Dados</span>
+            </h5>
+            <textarea class="form-control h-100" rows="5"
             id="inputTextArea"
             placeholder="Insira a matriz aqui"
           ></textarea>
+          </div>
+
           <!-- Botão para converter a matriz -->
           <button onclick="converterMatriz()">Converter</button>
           <!-- Botão para criar o gráfico -->
@@ -25,23 +34,55 @@
           <!-- Div para exibir a tabela HTML -->
           <div class="row">
             <div class="col-md-12">
+
+            <div class="bg-light border rounded p-4 m-1">
+              <h5 class="d-flex justify-content-between mb-3">
+                <span class="text-muted">Todas as Entradas e Saidas</span>
+              </h5>
               <div id="outputDiv"></div>
             </div>
-          </div>
-        </div>
-        <!-- Canvas para exibir o gráfico -->
-        <div class="row" id="div_grafico" style="display: none">
-          <div class="col-md-8">
-            <div class=" border rounded p-4 m-1">
-              <canvas id="grafico"></canvas>
+              <!-- Botão para criar o gráfico -->
+              <button onclick="criarGrafico()">Gráfico</button>
             </div>
           </div>
-          <div class="col-md-6">
-            <canvas id="grafico_saidas"></canvas>
-          </div>
         </div>
-        <div id="dados"></div>
       </div>
     </div>
+    <div class="py-5">
+      <div class="container"  id="div_grafico" style="display: none">
+        <!-- Canvas para exibir o gráfico -->
+        <div class="row py-3">
+          <div class="col-md-6">
+            <div class="bg-light border rounded p-4 m-1">
+              <h5 class="d-flex justify-content-between mb-3">
+                <span class="text-muted">Grafico Entradas e Saidas</span>
+              </h5>
+              <canvas id="grafico" width="400" height="250"></canvas>
+            </div>
+              <div class="bg-light border rounded p-4 m-1">
+                <h5 class="d-flex justify-content-between mb-3">
+                  <span class="text-muted">Resumo das Entradas</span>
+                </h5>
+                <div id="tabela2"></div>
+              </div>
+              <div class="bg-light border rounded p-4 m-1">
+                <h5 class="d-flex justify-content-between mb-3">
+                  <span class="text-muted">Resumo das Saidas</span>
+                </h5>
+                <div id="tabela3" ></div>
+              </div>
+            </div>
+          <div class="col-md-6">
+            <div class="bg-light border rounded p-4 m-1">
+              <h5 class="d-flex justify-content-between mb-3">
+                <span class="text-muted">Meses Entradas e Saidas</span>
+              </h5>
+              <div id="dados"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
